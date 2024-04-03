@@ -1,11 +1,11 @@
 # For Flask apps
-Flask
-Flask-SQLAlchemy
-Flask-Marshmallow
-Marshmallow-SQLAlchemy
-jwt
-flask-wtf
-wtforms-sqlalchemy
+# Flask
+# Flask-SQLAlchemy
+# Flask-Marshmallow
+# Marshmallow-SQLAlchemy
+# jwt
+# flask-wtf
+# wtforms-sqlalchemy
 # For Dash apps
 dash
 dash-bootstrap-components
@@ -19,3 +19,7 @@ pytest-cov
 # Dash testing may need to be esacaped: dash\[testing]
 # see https://dash.plotly.com/testing
 dash[testing]
+webdriver-manager
+# needed for some reason
+# pip install psutil
+# pip install multiprocess
