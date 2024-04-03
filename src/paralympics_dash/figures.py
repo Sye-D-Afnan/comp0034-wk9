@@ -213,14 +213,14 @@ def create_card(event_id):
     df_events = pd.read_csv(event_data)
     ev = df_events.loc[event_id - 1]
 
-    # Variables for the card contents
-    logo = f'logos/{ev['year']}_{ev['host']}.jpg'
-    dates = f'{ev['start']} to {ev['end']}'
-    host = f'{ev['host']} {ev['year']}'
-    highlights = f'Highlights: {ev['highlights']}'
-    participants = f'{ev['participants']} athletes'
-    events = f'{ev['events']} events'
-    countries = f'{ev['countries']} countries'
+    #Variables for the card contents
+    logo = f"logos/{ev['year']}_{ev['host']}.jpg"
+    dates = f"{ev['start']} to {ev['end']}"
+    host = f"{ev['host']} {ev['year']}"
+    highlights = f"Highlights: {ev['highlights']}"
+    participants = f"{ev['participants']} athletes"
+    events = f"{ev['events']} events"
+    countries = f"{ev['countries']} countries"
 
     c = dbc.Card([
         dbc.CardBody(
